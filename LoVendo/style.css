@@ -1,0 +1,257 @@
+#loading {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    animation: fadeOut 4s ease-in-out forwards;
+    background-color: #000000;
+    z-index: 99;
+  }
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+      display: none;
+    }
+  }
+
+
+  #loading-image {
+    z-index: 100;
+    animation: movimiento 1s ease-in-out infinite;
+    width: 30vw;
+  }
+
+  @keyframes movimiento {
+    0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2); /* Ajusta el valor para el nivel de zoom */
+      }
+  }
+
+
+:root body{
+    background-color: rgb(0, 0, 0);
+}
+
+.header {
+    background-color: rgb(0, 0, 0);
+}
+
+.bg-blacksito {
+    background-color: rgb(0, 0, 0);
+
+}
+
+.bg-blancomenosblancoqueelblanco {
+
+    background-color: rgb(242 242 242);
+}
+
+.bv-logosempresa img {
+    width: 6vw;
+    margin-left: 1vw;
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.075));
+}
+
+.col p {
+
+    font-size: 1vw;
+}
+
+.sector-informes-logos i {
+
+    font-size: 8vw;
+
+}
+.bv-button {
+    font-size: 1vw;
+    width: 15vw;
+    border-radius: 20px;
+    border: solid 3px rgb(29 103 205)
+
+}
+
+.bv-comofunciona {
+
+    width: 15vw;
+}
+
+.bg-lovendo {
+
+    background-image: url(img/lovendo.png) ;
+
+    background-size: 50%;
+    background-attachment: fixed;
+
+    
+
+}
+
+.logobbva {
+    width: 130px !important;
+    padding: 38px 10px 38px 10px;
+}
+
+.logops {
+    width: 130px !important;
+    padding: 25px 5px 25px 5px;
+}
+
+
+.bv-textoadentro {
+    display: none;
+}
+
+.img-lovendo{ 
+    width: 20vw;
+}
+
+.img-descargar {
+    filter: drop-shadow(0px 0px 2px #ffffff13);
+    margin: 0 auto;
+    width: 10vw;
+}
+.img-celular{ 
+    width: 12vw;
+}
+
+.bv-seccionprincipal {
+
+    margin-bottom: 10vw;
+}
+
+.logobds{
+    width: 130px !important;
+    padding: 14px 5px 14px 5px;
+}
+/* MEDIA QUERYS */
+
+@media only screen and (max-width: 768px) {
+    .responsive-celular {
+        text-align: center !important;
+        margin-bottom: 5vw !important;
+    }
+    .pe-5 {
+        padding: 0 !important;
+    }
+    .img-lovendo{ 
+        width: 50vw;
+    }
+    .img-descargar {
+        filter: drop-shadow(0px 0px 5px #ffffff13);
+        margin: 0 auto;
+        width: 50vw;
+    }
+    .bv-fotoscomofunciona {
+        flex-direction: column ;
+
+    }
+    .img-celular{ 
+        width: 50vw;
+    }
+    
+    .logobds{
+        width: 25vw !important;
+        padding: 16px 5px 16px 5px;
+    }
+    .ps-5 {
+        padding: 0 !important;
+    }
+    .bv-comofunciona {
+
+        width: 75vw;
+    }
+    .bv-textofuera {
+        display: none;
+    }
+    .bv-textoadentro {
+        display: block;
+        font-size: 7vw !important;
+    }
+    .pt-5 {
+        padding-top: 5vw !important;
+    }
+    .bv-button {
+        font-size: 2.5vw;
+        width: 35vw;
+        border-radius: 20px;
+        border: solid 3px rgb(29 103 205)
+    
+    }
+    .bv-foto {
+        width: 99vw;
+
+    }
+    .pe-5 {
+        padding: 0 !important;
+    }
+    .bv-lovendo {
+        justify-content: center !important;
+    }
+    .bv-textocel {
+        font-size: 4vw !important;
+
+    }
+    .sector-informes-logos i {
+
+        font-size: 10vw;
+    
+    }
+    .bv-logosempresa img {
+        width: 25vw;
+        margin-top: 5vw;
+        filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.075));
+    }
+    .bv-logosempresa {
+        padding: 4vw !important;
+        
+
+    }
+    .logobbva {
+        width: 25vw !important;
+        padding: 8.5vw 1vw 8.5vw 1vw;
+    }
+
+    .logops {
+        width: 25vw !important;
+        padding: 6vw 1vw 6vw 1vw;
+    }
+    
+    .bv-logosempresa2 {
+        display: none;
+    }
+    .nav-pills {
+        justify-content: center !important;
+        border-bottom: 1px solid white;
+    }
+    .bg-lovendo {
+
+        background-image: url(img/lovendo.png) ;
+    
+        background-size: 100%;
+        background-attachment: fixed;
+    
+    }
+    .bv-responsivefoto{
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .bv-responsivecelu {
+
+        text-align: center;
+    }
+
+    footer {
+        display: none;
+    }
+  }

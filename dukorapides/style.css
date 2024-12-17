@@ -1,0 +1,64 @@
+body {
+    display: grid;
+    place-items: center;
+    margin-top: 50vh;
+}
+.duko-box {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border: solid 2.3px rgb(255, 255, 255);
+    border-radius: 25px;
+    color: white;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.534);
+
+}
+.duko-box img   { 
+    z-index: 2;
+    height: 50px;
+    padding: 10px 15px;
+    color: #fff;
+    flex-direction: row;
+    filter: drop-shadow(0px 0px 7px rgb(97, 49, 231));
+}
+
+video {
+    position: fixed; right: 0; bottom: 0;
+
+    min-width: 100%; min-height: 100%;
+    
+    width: auto; height: auto; z-index: -100;
+}
+
+
+.loading-gif {
+    max-width: 500px;
+}
+
+.pre-loader {
+    position: fixed;
+    z-index: 100; /** make sure this is the highest value compared to all other divs **/
+    top: 0;
+    left: 0;
+    background: #681857;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.pre-loader.hidden {
+    animation: fadeOut 10s; /** change to 1s */
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}

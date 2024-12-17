@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,300&display=swap');
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #FA7819 #FAFAFA;
+  }
+  
+  /* Chrome, Edge and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+    width: 10px;
+  }
+  *::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #FAFAFA;
+    border: 1px solid #FA7819;
+  }
+  
+  *::-webkit-scrollbar-track:hover {
+    background-color: #FAFAFA;
+  }
+  
+  *::-webkit-scrollbar-track:active {
+    background-color: #000000;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #FA7819;
+  }
+  
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: #FA7819;
+  }
+  
+  *::-webkit-scrollbar-thumb:active {
+    background-color: #FA7819;
+  }
+  
+
+
+html {
+    overflow-y: scroll;
+
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Oswald', "Barlow";
+    scroll-behavior: smooth;
+    background-color: gray;
+    min-width: auto;
+    max-height: auto;
+}
+
+@media (min-width: 992px) and (max-width: 1199px){ 
+    
+    #antezana{ top: 270.5%; }  
+
+
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px){
+
+}
+
+/* Teléfonos */
+
+@media only screen and (max-width: 914px) {
+
+    body {
+        font-family: 'Oswald', "Barlow";
+        scroll-behavior: smooth;
+        background-color: gray;
+        min-width: auto;
+        max-height: auto;
+        zoom: 120%;
+    }
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    body {
+        font-family: 'Oswald', "Barlow";
+        scroll-behavior: smooth;
+        background-color: gray;
+        min-width: auto;
+        max-height: auto;
+        zoom: 108%;
+    }
+
+}
+
+@media only screen and (min-width: 1300px) {
+    
+    #antezana{     
+        position: absolute;
+        left:7%;
+        top:100.5%;
+        text-align:left; 
+    } 
+
+    body {
+        font-family: 'Oswald', "Barlow";
+        scroll-behavior: smooth;
+        background-color: gray;
+        min-width: auto;
+        max-height: auto;
+        zoom: 107.5%;
+    }
+    
+
+}
+
+* {outline: none !important;}
+textarea:focus, input:focus {outline: none !important;}
+a {color: #fa7819; font-family: 'Oswald', "Barlow";; text-decoration: none;}
+a:hover {color: #fa7819; font-family: 'Oswald', "Barlow";; text-decoration: none;}
+a:visited {color: #fa7819; font-family: 'Oswald', "Barlow";; text-decoration: none;}
+.Titulo {
+    text-align: center;
+    background-color: #fa7819;
+    margin-left: -1%;
+    margin-right: -0.45%;
+}
+
+
+
+#title {
+    
+    color: #000000;
+
+}
+
+.lista {
+
+    background-color: #000000;
+    color: #fa7819;
+    align-content: center;
+    margin-left: -1%;
+    margin-right: -0.45%;
+
+}
+
+#alejo {
+
+    scroll-behavior: smooth; 
+}
+
+#quinto {
+
+    scroll-behavior: smooth; 
+}
+
+#albumes {
+
+    scroll-behavior: smooth; 
+}
+
+#alejo {
+
+    scroll-behavior: smooth; 
+}
+
+.logo {
+
+        position: absolute;
+        left:50%;
+        top:1.78%;
+        text-align:left;
+
+       
+
+}
+
+#lista {
+
+
+        height: 7vh;
+        display: grid;
+        
+        align-content: middle;
+        
+
+
+}
+ul {
+ list-style-type: none;
+ display: grid;
+ align-content: center;
+ grid-template-columns: 1fr 3fr 1fr 0.5fr;
+ grid-template-rows: 1fr 1fr 1fr ;
+ grid-column-gap: -20px;
+ 
+ 
+
+}
+
+#image {
+
+    float:left;
+    height: auto;
+    margin-left: 33px;
+    margin-right: 20px;
+    border-style: double double double;
+    border-color: #fa7819;
+    border-radius: 15px;
+    max-width: 100%;
+
+}
+
+#img-div {
+
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+#img-caption {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+#list {
+
+    position: relative;
+    padding-left: 30px;
+    list-style: none;
+    z-index: 10;
+}
+
+#tribute-info {
+
+    color: #f1b41a;
+}
+
+.boton {
+    background-color: #e1a91b; /* Green */
+    color: rgb(0, 0, 0);
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    border-radius: 15px;
+}
+
+.video-ysy {
+
+text-align: center;
+
+margin-top: 50px;
+margin-bottom: 50px;
+
+}
+
+img {
+
+    display: block;
+}
+
+.quinto-escalon {
+
+    background-color: #fa7819;
+    text-align: center;
+    border-radius: 15px;
+
+}
+
+
+
+.textoquinto {
+
+    text-align: center;
+    margin-left: 60px;
+    margin-right: 60px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.quintosad {
+
+    text-align: left;
+    margin-left: 30px;
+    font-size: 35px;
+
+}  
+
+.textalbum {
+
+    background-color: #fa7819;
+    text-align: center;
+    border-radius: 15px;    
+
+}
+
+
+
+
+
+
+.slideshow-container {
+  max-width: 400px;
+  position: relative;
+  margin: auto;
+  margin-bottom: 0%;
+}
+
+
+.mySlides {
+  display: none;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+.titlesponsor {
+    margin-top: 120px;
+    background-color: #fa7819;
+    text-align: center;
+    border-radius: 15px;
+    
+}
+
+
+
+#sponsorfoto {
+
+    text-align: center;
+    border-style: double double double;
+    border-color: #ffffff;
+    border-radius: 15px;
+    max-width: auto;
+    margin:0 auto;
+	display:block;
+    min-width: auto;
+    max-height: auto;
+}
+
+footer {
+
+    background-color: #000000;
+    color: #fa7819;
+    border-radius: 6px;
+}
+
+.pie {
+    text-align: center;
+    padding: 3px;
+}
+
+.logos {
+
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+}

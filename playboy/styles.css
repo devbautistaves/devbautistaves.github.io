@@ -1,0 +1,719 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,100&family=Oswald:wght@300&display=swap");
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #f86f6f #202124;
+}
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+  width: 10px;
+}
+*::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: #202124;
+  border: 2px solid #ff8ff7;
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: #f9a44a;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: #f90feb;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #f86f6f;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #ff5f7c;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #ff8ff7;
+}
+
+html {
+  font-family: "Oswald", "Kanit" !important;
+}
+
+body {
+  font-family: "Oswald", "Kanit";
+  scroll-behavior: smooth;
+  min-width: auto;
+  max-height: auto;
+  width: 100%;
+  height: 100%;
+  background: url(imagenes/aaaaaaaaa.png);
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f4d3ee;
+  box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
+  z-index: 10;
+  font-family: "Oswald", "Kanit";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.nav-logo {
+  display: block;
+  position: relative;
+  top: 7px;
+}
+.nav-lista {
+  display: flex;
+  margin-right: 2rem;
+  text-transform: uppercase;
+}
+
+.nav-lista a {
+  display: block;
+  font-size: 1.8rem;
+  padding: 2rem;
+  color: #f86f6f;
+  text-decoration: none;
+  position: relative;
+  top: 5px;
+}
+
+.nav-lista a:link {
+  color: #f86f6f;
+  text-decoration: none;
+}
+
+.nav-lista a:visited {
+  color: #f86f6f;
+  text-decoration: none;
+}
+
+.nav-lista a:hover {
+  color: #f86f6f;
+  text-decoration: none;
+}
+
+.nav-lista a:active {
+  color: #f86f6f;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.nav-bar .icon {
+  display: none;
+}
+
+.boton {
+  padding: 1px 15px;
+  border: unset;
+  border-radius: 15px;
+  color: #212121;
+  z-index: 1;
+  background: #e8e8e8;
+  position: relative;
+  font-weight: 1000;
+  font-size: 17px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+  overflow: hidden;
+}
+.boton i {
+  color: #f86f6f;
+}
+.boton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: #212121;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+}
+
+.boton:hover {
+  color: #e8e8e8;
+}
+
+.boton:hover::before {
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .nav-lista li:not(:first-child) {
+    display: none;
+  }
+  .nav-bar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the nav-bar with JavaScript when the user clicks on the icon. This class makes the nav-bar look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .nav-lista.responsive {
+    position: relative;
+  }
+  .nav-lista.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav-lista.responsive li {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.bienvenida {
+  position: relative;
+  text-align: center;
+  height: auto;
+  top: 150px;
+  display: fixed;
+}
+
+.muchomuchisuchi {
+  font-family: "Oswald", "Kanit";
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #ff90eb 0%,
+    #db9127 29%,
+    #c82a9d 67%,
+    #f86f6f 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 50px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.bienvenida h2 {
+  font-family: "Oswald", "Kanit";
+  font-size: 25px;
+  color: #fff;
+  text-shadow: 0 0 7px rgb(255 255 255), 0 0 42px rgb(220 170 243), 0 0 92px rgb(255 255 255);
+}
+
+.equipo {
+  text-align: center;
+  position: relative;
+  top: 300px;
+  background-color: #ffd4ef;
+}
+
+.wordCarousel {
+  font-family: "Oswald", "Kanit";
+  font-size: 36px;
+  font-weight: 100;
+  color: #f86f6f;
+}
+.wordCarousel div {
+  overflow: hidden;
+  position: relative;
+  float: center;
+  height: 65px;
+  padding-top: 10px;
+  margin-top: -10px;
+}
+
+.wordCarousel li {
+  font-family: Oswald;
+  color: #db9127;
+  font-weight: 700;
+  padding: 0 10px;
+  height: 45px;
+  margin-bottom: 45px;
+  display: block;
+}
+.flip2 {
+  animation: flip2 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+.flip3 {
+  animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+.flip4 {
+  animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+.flip5 {
+  text-transform: uppercase;
+  animation: flip5 12s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+
+@keyframes flip2 {
+  0% {
+    margin-top: -180px;
+  }
+  5% {
+    margin-top: -90px;
+  }
+  50% {
+    margin-top: -90px;
+  }
+  55% {
+    margin-top: 0px;
+  }
+  99.99% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -180px;
+  }
+}
+
+@keyframes flip3 {
+  0% {
+    margin-top: -270px;
+  }
+  5% {
+    margin-top: -180px;
+  }
+  33% {
+    margin-top: -180px;
+  }
+  38% {
+    margin-top: -90px;
+  }
+  66% {
+    margin-top: -90px;
+  }
+  71% {
+    margin-top: 0px;
+  }
+  99.99% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -270px;
+  }
+}
+
+@keyframes flip4 {
+  0% {
+    margin-top: -360px;
+  }
+  5% {
+    margin-top: -270px;
+  }
+  25% {
+    margin-top: -270px;
+  }
+  30% {
+    margin-top: -180px;
+  }
+  50% {
+    margin-top: -180px;
+  }
+  55% {
+    margin-top: -90px;
+  }
+  75% {
+    margin-top: -90px;
+  }
+  80% {
+    margin-top: 0px;
+  }
+  99.99% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -360px;
+  }
+}
+
+@keyframes flip5 {
+  0% {
+    margin-top: -450px;
+  }
+  5% {
+    margin-top: -360px;
+  }
+  20% {
+    margin-top: -360px;
+  }
+  25% {
+    margin-top: -270px;
+  }
+  40% {
+    margin-top: -270px;
+  }
+  45% {
+    margin-top: -180px;
+  }
+  60% {
+    margin-top: -180px;
+  }
+  65% {
+    margin-top: -90px;
+  }
+  80% {
+    margin-top: -90px;
+  }
+  85% {
+    margin-top: 0px;
+  }
+  99.99% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -450px;
+  }
+}
+
+.card {
+  position: sticky;
+  box-sizing: border-box;
+  padding: 5px 5px 5px 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 10px #31c5d7;
+  transition: width 2s, background-color 1s, box-shadow 1s;
+  border-radius: 10px;
+  color: black;
+  margin-left: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  margin-right: 5px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 8px 0 rgba(226, 57, 170, 0.2);
+  background-color: rgb(252, 146, 234);
+}
+
+.wrapper {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Oswald", "Kanit";
+}
+
+.wrapper a {
+  text-decoration: none;
+}
+
+
+#button {
+  display: inline;
+ padding-left: 10px;
+ padding-right: 10px;
+  color: #222324;
+}
+
+
+#name {
+  font-size: 24px;
+}
+
+footer {
+  font-family: "Oswald", "Kanit";
+  background-color: #1a1b1f;
+  color: #f86f6f;
+}
+
+.pie {
+  font-family: "Oswald", "Kanit";
+  text-align: center;
+  padding: 3px;
+  font-size: 16px;
+}
+
+.pie a {
+  display: inline;
+  margin-left: 10px;
+  color: #f86f6f;
+}
+
+.pie a:link {
+  color: #f86f6f;
+  text-decoration: none;
+}
+
+.pie a:visited {
+  color: #f86f6f;
+  text-decoration: none;
+}
+
+.pie a:hover {
+  color: #f86f6f;
+  text-decoration: none;
+}
+
+.pie a:active {
+  color: #f86f6f;
+  text-decoration: none;
+}
+
+.logos {
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.donaciones {
+  overflow: hidden;
+  position: relative;
+  float: center;
+  margin: auto;
+  margin-top: 250px;
+  background-color: #ffd4ef;
+  font-family: "Oswald", "Kanit";
+
+}
+.donaciones h1 {
+  text-align: center;
+
+}
+
+*{ box-sizing: border-box; }
+.container{
+    display: inline-block;
+}
+.end1, .middle1, .middle2{
+    display: inline-block;
+    overflow:hidden;
+    height: 1.5em;
+    color: #f86f6f  !important;
+}
+.end2{
+    position:absolute;
+    color:#f86f6f
+}
+.middle1, .middle2{
+    color: #cfcfcf
+}
+.middle1 {
+    animation: ani1 5s infinite;
+    animation-delay: -3s;
+    max-width: 0;
+}
+.middle2 {
+    animation: ani2 5s infinite;
+    animation-delay: -3s;
+    max-width: 0;
+}
+
+@keyframes ani1 {
+    0% {
+    max-width: 500px;
+  }
+  
+  25% {
+    max-width: 0;
+  }
+  
+  75% {
+    max-width: 0;
+  }
+  
+  90% {
+    max-width: 500px;
+  }
+  
+  100% {
+    max-width: 500px;
+  }
+}
+
+@keyframes ani2 {
+    0% {
+        max-width: 0;
+    }
+
+    25% {
+        max-width: 0;
+    }
+
+    50% {
+        max-width: 500px;
+    }
+
+    75% {
+        max-width: 0;
+    }
+
+    100% {
+        max-width: 0;
+    }
+}
+
+.contenedores {
+
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+
+
+}
+
+.vip:hover {
+
+  box-shadow: 0 8px 8px 0 rgba(226, 57, 170, 0.2);
+  background-color: rgb(252, 146, 234);
+
+}
+
+.vip {
+
+
+
+  border: double;
+  border-width: 1px;
+  box-sizing: border-box;
+  width: 250px;
+  height: 466px;
+  border-color: fuchsia;
+  margin-bottom: 3%;
+  text-transform: uppercase;
+  background-color: #cb7bfa41; 
+  transition: width 2s, background-color 1s, box-shadow 1s;
+
+
+}
+
+
+
+.vip h2 {
+
+  color: red;
+  text-align: center;
+  font-size: 30px;
+
+}
+.vip p { 
+  padding-top: 10px;
+  text-align: center;
+  font-weight: bold;
+
+}
+.vip span {
+
+  color: red;
+  
+  font-size: 17px;
+
+}
+
+#bronce {
+
+  color: #ff8500;
+  font-size: 20px;
+
+}
+
+#plata {
+  color: rgb(110, 110, 110);
+  font-size: 20px;
+
+}
+
+
+#oro {
+
+  color: #ffcf00;
+  font-size: 20px;
+}
+
+#diamante {
+
+  color: #00fff9;
+  font-size: 20px;
+}
+
+.mafias {
+
+  background-color: #1a1b1f;
+  padding-top: 10px;
+
+  
+}
+
+.mafia {
+
+
+
+  border: double;
+  border-width: 1px;
+  box-sizing: border-box;
+  width: 250px;
+  height: 466px;
+  border-color: fuchsia;
+  margin-bottom: 3%;
+  text-transform: uppercase;
+  background-color: #cb7bfa41; 
+  transition: width 2s, background-color 1s, box-shadow 1s;
+
+
+}
+
+.mafia h2 {
+
+  color: red;
+  text-align: center;
+  font-size: 30px;
+
+}
+.mafia p { 
+  padding-top: 10px;
+  text-align: center;
+  font-weight: bold;
+
+}
+.mafia span {
+
+  color: red;
+  
+  font-size: 17px;
+
+}
+
+.mafia:hover {
+
+  box-shadow: 0 8px 8px 0 rgba(226, 57, 170, 0.2);
+  background-color: rgb(252, 146, 234);
+
+}

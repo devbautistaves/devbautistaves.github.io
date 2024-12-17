@@ -1,0 +1,132 @@
+body {
+
+    overflow: hidden;
+
+
+}
+
+#navbar {
+    position: fixed;
+    min-width: 230px;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    height: 100%;
+    border-right: solid;
+    border-color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+#navbar ul {
+    height: 88%;
+    padding: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+#navbar li {
+    color: #0f1844;
+    padding-bottom: 20px;
+    list-style: none;
+    position: relative;
+    font-size: 23px;
+
+}
+
+#navbar a {
+    display: block;
+
+    color: #e7e5e5;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#navbar header {
+
+    font-size: 0.8em;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.034);
+
+
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.ultimo {
+
+    border-bottom: 3px solid rgb(255, 255, 255);
+
+}
+
+.foto {
+
+    margin-top: 60%;
+
+}
+
+footer {
+
+position: absolute;
+bottom: 0;
+min-width: 100%;
+height: 100px;
+
+}
+.diablo {
+    color: white;
+
+}
+
+.diablo h2 {
+
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.diablo p {
+
+    font-weight: 800;
+
+}
+
+.cars {
+
+    position: sticky;
+    margin-left: 35rem;
+    padding-top: 40px;
+
+}
+
+.musica {
+
+    position: relative;
+    margin-left: 99rem;
+    bottom: 60px;
+    right: 100px;
+
+}
+
+.musica select {
+
+width: 200px;
+
+}
+
+@media (max-width: 1400px) {
+    
+
+    .foto {
+
+        margin-top: 30%;
+
+    }
+
+    body {
+
+        zoom: 73%;
+
+    }
+
+ }

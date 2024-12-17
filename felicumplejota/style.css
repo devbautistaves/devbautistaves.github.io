@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  } 
+  
+body {
+    margin: 0 auto;
+    text-align: center;
+        position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url('https://i.pinimg.com/originals/cf/e2/79/cfe279583384c85df627a7b5c5c1d56c.gif');
+    background-size: cover;
+}
