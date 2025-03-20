@@ -1,0 +1,9 @@
+.fotocv {
+  width: 15vw;
+  height:15vw;
+  background:url(img/fotocv.jpg) no-repeat ;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+}
+
