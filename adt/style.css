@@ -1,0 +1,30 @@
+body{
+    background: radial-gradient(circle, rgba(59,119,237,1) 41%, rgba(71,161,255,1) 72%, rgba(35,218,255,1) 100%);
+
+}
+
+
+.video {
+    display: flex;
+    justify-content: space-evenly;    
+    text-align: start;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.video2 video{
+    width: 21.5vw;
+    border: solid 2px wheat;
+    border-radius: 1vw;
+}
+
+
+.foto img {
+    width: 30vw;
+    border: solid 2px wheat;
+    border-radius: 1vw;
+}
+.foto2 img {
+    border: solid 2px wheat;
+    border-radius: 1vw;
+}
