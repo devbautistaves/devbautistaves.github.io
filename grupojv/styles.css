@@ -953,7 +953,10 @@ footer ul li a:hover {
         justify-content: center;
         transition: var(--transition);
     }
-    
+    .section-header img {
+        width: 50vw !important;
+        height: auto !important;
+    }
     .nav-menu.active {
         left: 0;
     }
