@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo JV - Soluciones Empresariales</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.png" alt="Grupo JV Logo">
+            </div>
+            <nav>
+                <button class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="#inicio" class="active">Inicio</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#clientes">Clientes</a></li>
+                    <li><a href="#contacto" class="btn-primary">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-slider">
+            <div class="slide active">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="animate-in">Soluciones empresariales <span>innovadoras</span></h1>
+                        <p class="animate-in">Impulsamos el crecimiento de su empresa con soluciones a medida</p>
+                        <div class="hero-buttons animate-in">
+                            <a href="#servicios" class="btn-primary">Nuestros Servicios</a>
+                            <a href="#contacto" class="btn-secondary">Contáctenos</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-bg" style="background-image: url('img/hero1.png'); opacity: 0.35; background-color: black; "></div>
+            </div>
+            <div class="slide">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1>Experiencia y <span>profesionalismo</span></h1>
+                        <p>Más de 15 años brindando servicios de excelencia</p>
+                        <div class="hero-buttons">
+                            <a href="#nosotros" class="btn-primary">Conózcanos</a>
+                            <a href="#contacto" class="btn-secondary">Contáctenos</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-bg" style="background-image: url('img/hero2.png'); opacity: 0.35; background-color: black;"></div>
+            </div>
+            <div class="slide">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1>Atención <span>personalizada</span></h1>
+                        <p>Cada cliente recibe un servicio adaptado a sus necesidades específicas</p>
+                        <div class="hero-buttons">
+                            <a href="#clientes" class="btn-primary">Nuestros Clientes</a>
+                            <a href="#contacto" class="btn-secondary">Contáctenos</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-bg" style="background-image: url('img/hero3.jpg'); opacity: 0.35; background-color: black;"></div>
+            </div>
+            <div class="slider-controls">
+                <button class="prev-slide"><i class="fas fa-chevron-left"></i></button>
+                <div class="slider-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+                <button class="next-slide"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="nosotros" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Quiénes Somos</span>
+                <h2 class="section-title">Sobre Grupo JV</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="img/Jonathan.png" alt="Equipo Grupo JV">
+                </div>
+                <div class="about-text">
+                    <h3>Nuestra Historia</h3>
+                    <p>Grupo JV nació con la visión de ofrecer soluciones empresariales integrales que impulsen el crecimiento y desarrollo de nuestros clientes. Con más de 15 años de experiencia en el mercado, nos hemos consolidado como un referente en el sector.</p>
+                    
+                    <h3>Nuestra Misión</h3>
+                    <p>Brindar servicios de alta calidad que generen valor agregado a nuestros clientes, estableciendo relaciones de confianza a largo plazo basadas en la excelencia y el compromiso.</p>
+                    
+                    <div class="stats-container">
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="15">0</span>
+                            <span class="stat-label">Años de Experiencia</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="500">0</span>
+                            <span class="stat-label">Clientes Satisfechos</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="50">0</span>
+                            <span class="stat-label">Profesionales</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#contacto" class="btn-primary">Contáctenos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Qué Ofrecemos</span>
+                <h2 class="section-title">Nuestros Servicios</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Consultoría Empresarial</h3>
+                    <p>Asesoramiento estratégico para optimizar procesos y maximizar resultados.</p>
+                    <a href="#contacto" class="service-link">Más información <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Gestión de Proyectos</h3>
+                    <p>Planificación, ejecución y control de proyectos para garantizar su éxito.</p>
+                    <a href="#contacto" class="service-link">Más información <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Recursos Humanos</h3>
+                    <p>Selección, capacitación y desarrollo del capital humano de su empresa.</p>
+                    <a href="#contacto" class="service-link">Más información <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Soluciones Tecnológicas</h3>
+                    <p>Implementación de herramientas digitales para optimizar su negocio.</p>
+                    <a href="#contacto" class="service-link">Más información <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3>Marketing y Comunicación</h3>
+                    <p>Estrategias efectivas para potenciar su marca y alcanzar nuevos clientes.</p>
+                    <a href="#contacto" class="service-link">Más información <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Asesoría Financiera</h3>
+                    <p>Análisis y planificación financiera para optimizar sus recursos.</p>
+                    <a href="#contacto" class="service-link">Más información <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section id="clientes" class="clients">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Quiénes Confían en Nosotros</span>
+                <h2 class="section-title">Nuestros Clientes</h2>
+            </div>
+            <div class="testimonials">
+                <div class="testimonial-slider">
+                    <div class="testimonial active">
+                        <div class="testimonial-content">
+                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                            <p>"Grupo JV ha sido un socio estratégico fundamental para el crecimiento de nuestra empresa. Su profesionalismo y dedicación han superado nuestras expectativas."</p>
+                            <div class="testimonial-author">
+                                <div class="author-image">
+                                    <img src="client-1.jpg" alt="Cliente">
+                                </div>
+                                <div class="author-info">
+                                    <h4>Carlos Rodríguez</h4>
+                                    <span>Director General, Empresa ABC</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                            <p>"La implementación de las soluciones propuestas por Grupo JV nos permitió optimizar nuestros procesos y aumentar nuestra productividad en un 30%."</p>
+                            <div class="testimonial-author">
+                                <div class="author-image">
+                                    <img src="client-2.jpg" alt="Cliente">
+                                </div>
+                                <div class="author-info">
+                                    <h4>Laura Martínez</h4>
+                                    <span>Gerente de Operaciones, Empresa XYZ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                            <p>"El equipo de Grupo JV demostró un profundo conocimiento del mercado y nos brindó asesoramiento personalizado que fue clave para nuestra expansión internacional."</p>
+                            <div class="testimonial-author">
+                                <div class="author-image">
+                                    <img src="client-3.jpg" alt="Cliente">
+                                </div>
+                                <div class="author-info">
+                                    <h4>Miguel Sánchez</h4>
+                                    <span>CEO, Empresa 123</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-controls">
+                    <button class="prev-testimonial"><i class="fas fa-chevron-left"></i></button>
+                    <div class="testimonial-dots">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                    </div>
+                    <button class="next-testimonial"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+            <div class="client-logos">
+                <div class="logo-slider">
+                    <div class="logo-item"><img src="logo-1.png" alt="Logo Cliente"></div>
+                    <div class="logo-item"><img src="logo-2.png" alt="Logo Cliente"></div>
+                    <div class="logo-item"><img src="logo-3.png" alt="Logo Cliente"></div>
+                    <div class="logo-item"><img src="logo-4.png" alt="Logo Cliente"></div>
+                    <div class="logo-item"><img src="logo-5.png" alt="Logo Cliente"></div>
+                    <div class="logo-item"><img src="logo-6.png" alt="Logo Cliente"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Estamos para Ayudarle</span>
+                <h2 class="section-title">Contáctenos</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Dirección</h3>
+                            <p>Av. Principal 1234, Buenos Aires, Argentina</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Teléfono</h3>
+                            <p>+54 11 1234-5678</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <p>info@grupojv.com.ar</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Horario de Atención</h3>
+                            <p>Lunes a Viernes: 9:00 - 18:00</p>
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <h3>Síguenos en Redes Sociales</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nombre Completo</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Teléfono</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Asunto</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map">
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0168878895484!2d-58.38375908495731!3d-34.60373446500708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses!2sar!4v1650000000000!5m2!1ses!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo-white.png" alt="Grupo JV Logo">
+                    <p>Soluciones empresariales integrales para impulsar su negocio.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#clientes">Clientes</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h3>Nuestros Servicios</h3>
+                    <ul>
+                        <li><a href="#servicios">Consultoría Empresarial</a></li>
+                        <li><a href="#servicios">Gestión de Proyectos</a></li>
+                        <li><a href="#servicios">Recursos Humanos</a></li>
+                        <li><a href="#servicios">Soluciones Tecnológicas</a></li>
+                        <li><a href="#servicios">Marketing y Comunicación</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Suscríbase a Nuestro Newsletter</h3>
+                    <p>Reciba noticias y actualizaciones directamente en su correo.</p>
+                    <form id="newsletterForm">
+                        <input type="email" placeholder="Su correo electrónico" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Grupo JV. Todos los derechos reservados.</p>
+                <div class="footer-social">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- Cookie Consent -->
+    <div class="cookie-consent">
+        <div class="cookie-content">
+            <p>Utilizamos cookies para mejorar su experiencia en nuestro sitio web. Al continuar navegando, acepta nuestra <a href="#">política de cookies</a>.</p>
+            <button class="btn-primary accept-cookies">Aceptar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
