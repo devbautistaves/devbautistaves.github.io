@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo JV - Cotizaciones de Seguros</title>
+    <link rel="stylesheet" href="cotizaciones.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../img/jv.png" type="image/x-icon">
+
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="../img/logo2.png" alt="Grupo JV Logo">
+            </div>
+            <nav>
+                <button class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#" class="active">Cotizaciones</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#contacto" class="btn-primary">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Cotizá tu seguro en <span>minutos</span></h1>
+                <p>Protegé lo que más te importa con las mejores coberturas del mercado</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-text">Años de experiencia</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">10k+</span>
+                        <span class="stat-text">Clientes satisfechos</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-text">Atención al cliente</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Categories Section -->
+    <section class="quote-categories">
+        <div class="container">
+            <div class="section-header">
+                <h2>¿Qué querés cotizar hoy?</h2>
+                <p>Seleccioná la categoría que necesitás y obtené tu cotización al instante</p>
+            </div>
+            
+            <div class="categories-tabs">
+                <button class="tab-btn active" data-tab="vehiculos">Vehículos</button>
+                <button class="tab-btn" data-tab="propiedades">Propiedades</button>
+                <button class="tab-btn" data-tab="personales">Personales</button>
+            </div>
+            
+            <div class="tab-content">
+                <!-- Vehículos Tab -->
+                <div class="tab-pane active" id="vehiculos">
+                    <div class="categories-grid">
+                        <div class="category-card">
+                            <div class="card-icon">
+                                <i class="fas fa-car"></i>
+                            </div>
+                            <h3>Auto</h3>
+                            <p>Protegé tu vehículo con las mejores coberturas</p>
+                            <ul class="features">
+                                <li><i class="fas fa-check"></i> Responsabilidad civil</li>
+                                <li><i class="fas fa-check"></i> Robo total y parcial</li>
+                                <li><i class="fas fa-check"></i> Daños por accidente</li>
+                            </ul>
+                            <a href="#" class="btn-quote" data-type="auto">Cotizar ahora</a>
+                        </div>
+                        
+                        <div class="category-card">
+                            <div class="card-icon">
+                                <i class="fas fa-motorcycle"></i>
+                            </div>
+                            <h3>Moto</h3>
+                            <p>Asegurá tu moto con la cobertura ideal</p>
+                            <ul class="features">
+                                <li><i class="fas fa-check"></i> Responsabilidad civil</li>
+                                <li><i class="fas fa-check"></i> Robo total</li>
+                                <li><i class="fas fa-check"></i> Asistencia mecánica</li>
+                            </ul>
+                            <a href="#" class="btn-quote" data-type="moto">Cotizar ahora</a>
+                        </div>
+                        
+                        <div class="category-card">
+                            <div class="card-icon">
+                                <i class="fas fa-bicycle"></i>
+                            </div>
+                            <h3>Bicicleta</h3>
+                            <p>Protegé tu bici contra robos y daños</p>
+                            <ul class="features">
+                                <li><i class="fas fa-check"></i> Robo total</li>
+                                <li><i class="fas fa-check"></i> Daños por accidente</li>
+                                <li><i class="fas fa-check"></i> Responsabilidad civil</li>
+                            </ul>
+                            <a href="#" class="btn-quote" data-type="bici">Cotizar ahora</a>
+                        </div>
+                        
+                        <div class="category-card">
+                            <div class="card-icon">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                            <h3>Vehículos pesados</h3>
+                            <p>Seguros especiales para camiones y utilitarios</p>
+                            <ul class="features">
+                                <li><i class="fas fa-check"></i> Responsabilidad civil</li>
+                                <li><i class="fas fa-check"></i> Cobertura de carga</li>
+                                <li><i class="fas fa-check"></i> Asistencia 24hs</li>
+                            </ul>
+                            <a href="#" class="btn-quote" data-type="pesados">Cotizar ahora</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Propiedades Tab -->
+                <div class="tab-pane" id="propiedades">
+                    <div class="categories-grid">
+                        <div class="category-card">
+                            <div class="card-icon">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <h3>Hogar</h3>
+                            <p>Protegé tu casa y tus pertenencias</p>
+                            <ul class="features">
+                                <li><i class="fas fa-check"></i> Incendio y robo</li>
+                                <li><i class="fas fa-check"></i> Daños por agua</li>
+                                <li><i class="fas fa-check"></i> Responsabilidad civil</li>
+                            </ul>
+                            <a href="#" class="btn-quote" data-type="hogar">Cotizar ahora</a>
+                        </div>
+                        
+                        <div class="category-card">
+                            <div class="card-icon">
+                                <i class="fas fa-store"></i>
+                            </div>
+                            <h3>Comercio</h3>
+                            <p>Asegurá tu negocio contra todo riesgo</p>
+                            <ul class="features">
+                                <li><i class="fas fa-check"></i> Robo y hurto</li>
+                                <li><i class="fas fa-check"></i> Incendio</li>
+                                <li><i class="fas fa-check"></i> Cristales y carteles</li>
+                            </ul>
+                            <a href="#" class="btn-quote" data-type="comercio">Cotizar ahora</a>
+                        </div>
+                        
+                        <div class="category-card">
+                            <div class="card-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <h3>Garantía de alquiler</h3>
+                            <p>La mejor solución para inquilinos</p>
+                            <ul class="features">
+                                <li><i class="fas fa-check"></i> Sin garante</li>
+                                <li><i class="fas fa-check"></i> Aprobación rápida</li>
+                                <li><i class="fas fa-check"></i> Cobertura completa</li>
+                            </ul>
+                            <a href="#" class="btn-quote" data-type="alquiler">Cotizar ahora</a>
+                        </div>
+                        
+                        <div class="category-card">
+                            <div class="card-icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <h3>Consorcio</h3>
+                            <p>Seguros para edificios y consorcios</p>
+                            <ul class="features">
+                                <li><i class="fas fa-check"></i> Responsabilidad civil</li>
+                                <li><i class="fas fa-check"></i> Incendio</li>
+                                <li><i class="fas fa-check"></i> Áreas comunes</li>
+                            </ul>
+                            <a href="#" class="btn-quote" data-type="consorcio">Cotizar ahora</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Personales Tab -->
+                <div class="tab-pane" id="personales">
+                    <div class="categories-grid">
+                        <div class="category-card">
+                            <div class="card-icon">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                            <h3>Accidentes personales</h3>
+                            <p>Protección ante imprevistos</p>
+                            <ul class="features">
+                                <li><i class="fas fa-check"></i> Indemnización</li>
+                                <li><i class="fas fa-check"></i> Gastos médicos</li>
+                                <li><i class="fas fa-check"></i> Incapacidad</li>
+                            </ul>
+                            <a href="#" class="btn-quote" data-type="accidentes">Cotizar ahora</a>
+                        </div>
+                        
+                        <div class="category-card">
+                            <div class="card-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h3>Celular</h3>
+                            <p>Protegé tu dispositivo móvil</p>
+                            <ul class="features">
+                                <li><i class="fas fa-check"></i> Robo y hurto</li>
+                                <li><i class="fas fa-check"></i> Daño accidental</li>
+                                <li><i class="fas fa-check"></i> Fallas técnicas</li>
+                            </ul>
+                            <a href="#" class="btn-quote" data-type="celular">Cotizar ahora</a>
+                        </div>
+                        
+                        <div class="category-card">
+                            <div class="card-icon">
+                                <i class="fas fa-laptop"></i>
+                            </div>
+                            <h3>Tecnología</h3>
+                            <p>Seguro para tus dispositivos electrónicos</p>
+                            <ul class="features">
+                                <li><i class="fas fa-check"></i> Notebooks y tablets</li>
+                                <li><i class="fas fa-check"></i> Cámaras y drones</li>
+                                <li><i class="fas fa-check"></i> Equipos de audio</li>
+                            </ul>
+                            <a href="#" class="btn-quote" data-type="tecnologia">Cotizar ahora</a>
+                        </div>
+                        
+                        <div class="category-card">
+                            <div class="card-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <h3>Seguro laboral</h3>
+                            <p>Protección para profesionales</p>
+                            <ul class="features">
+                                <li><i class="fas fa-check"></i> ART</li>
+                                <li><i class="fas fa-check"></i> Responsabilidad civil</li>
+                                <li><i class="fas fa-check"></i> Mala praxis</li>
+                            </ul>
+                            <a href="#" class="btn-quote" data-type="laboral">Cotizar ahora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Form Modal -->
+    <div class="modal" id="quoteModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <h2>Cotizá tu seguro de <span id="quoteType">auto</span></h2>
+                <p>Completá el formulario y recibí tu cotización al instante</p>
+            </div>
+            <form id="quoteForm">
+                <input type="hidden" id="insuranceType" name="insuranceType" value="">
+                
+                <div class="form-group">
+                    <label for="name">Nombre completo</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Teléfono</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                
+                <div class="form-group dynamic-fields">
+                    <!-- Dynamic fields will be added here based on insurance type -->
+                </div>
+                
+                <div class="form-group">
+                    <label for="comments">Comentarios adicionales</label>
+                    <textarea id="comments" name="comments" rows="3"></textarea>
+                </div>
+                
+                <div class="form-footer">
+                    <button type="submit" class="btn-primary">Solicitar cotización</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <div class="container">
+            <div class="section-header">
+                <h2>¿Por qué elegirnos?</h2>
+                <p>Más de 15 años brindando tranquilidad a nuestros clientes</p>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Coberturas completas</h3>
+                    <p>Ofrecemos las coberturas más amplias del mercado para proteger lo que más te importa.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3>Precios competitivos</h3>
+                    <p>Trabajamos con las mejores compañías para ofrecerte el mejor precio sin sacrificar calidad.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Atención personalizada</h3>
+                    <p>Te acompañamos en todo momento, especialmente cuando más nos necesitás.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Respuesta inmediata</h3>
+                    <p>Gestionamos tus trámites y siniestros con la mayor rapidez y eficiencia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>¿Necesitás asesoramiento personalizado?</h2>
+                <p>Nuestro equipo de expertos está listo para ayudarte a encontrar la mejor cobertura para tus necesidades.</p>
+                <div class="cta-buttons">
+                    <a href="tel:+541112345678" class="btn-primary"><i class="fas fa-phone-alt"></i> Llamanos</a>
+                    <a href="https://wa.me/5491112345678" class="btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="../img/jv.png" alt="Grupo JV Logo">
+                    <p>Soluciones en seguros para particulares y empresas.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h3>Nuestros Servicios</h3>
+                    <ul>
+                        <li><a href="#">Seguros de Auto</a></li>
+                        <li><a href="#">Seguros de Hogar</a></li>
+                        <li><a href="#">Seguros de Vida</a></li>
+                        <li><a href="#">Seguros para Empresas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contacto</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Av. Principal 1234, Longchamps</li>
+                        <li><i class="fas fa-phone-alt"></i> +54 11 1234-5678</li>
+                        <li><i class="fas fa-envelope"></i> info@grupojv.com.ar</li>
+                        <li><i class="fas fa-clock"></i> Lun-Vie: 9:00 - 18:00</li>
+                    </ul>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Grupo JV. Todos los derechos reservados.</p>
+                <div class="footer-legal">
+                    <a href="#">Términos y Condiciones</a>
+                    <a href="#">Política de Privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <script src="cotizaciones.js"></script>
+</body>
+</html>
