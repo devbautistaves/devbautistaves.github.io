@@ -912,6 +912,11 @@ footer ul li a:hover {
 .hero-buttons.animate-in {
     animation-delay: 0.6s;
 }
+.about-text ul li {
+    list-style-type: disc;
+    line-height: 1.7;
+padding-bottom: 1vw;
+}
 
 /* Responsive Styles */
 @media (max-width: 1024px) {
