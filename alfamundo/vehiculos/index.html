@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehículos - AlfaMundo Autopartes</title>
+    <meta name="author" content="BautistaVes">
+<meta name="copyright" content="BautistaVes">
+<meta name="robots" content="index">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://bautistaves.com.ar/alfamundo/logoalfm.png">
+<meta property="og:image" content="https://bautistaves.com.ar/alfamundo/logoalfm.png">
+<meta property="og:locale" content="es_AR">
+<meta property="og:site_name" content="Alfamundo Autos S.R.L">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>AlfaMundo <span>Autopartes</span></h1>
+            </div>
+            <nav>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html#productos">Productos</a></li>
+                    <li><a href="index.html#servicios">Servicios</a></li>
+                    <li><a href="vehiculos.html" class="active">Vehículos</a></li>
+                    <li><a href="index.html#nosotros">Nosotros</a></li>
+                    <li><a href="index.html#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="vehicle-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Nuestros Vehículos</h2>
+                <p>Explora nuestra selección de vehículos y encuentra el repuesto exacto que necesitas</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filters Section -->
+    <section class="vehicle-filters">
+        <div class="container">
+            <div class="filter-container">
+                <div class="filter-group">
+                    <label for="brand-filter">Marca:</label>
+                    <select id="brand-filter">
+                        <option value="all">Todas</option>
+                        <option value="ford">Ford</option>
+                        <option value="kia">Kia</option>
+                        <option value="renault">Renault</option>
+                        <option value="nissan">Nissan</option>
+                        <option value="peugeot">Peugeot</option>
+                        <option value="chevrolet">Chevrolet</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="year-filter">Año:</label>
+                    <select id="year-filter">
+                        <option value="all">Todos</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="older">Anteriores</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="type-filter">Tipo:</label>
+                    <select id="type-filter">
+                        <option value="all">Todos</option>
+                        <option value="sedan">Sedán</option>
+                        <option value="suv">SUV</option>
+                        <option value="pickup">Pickup</option>
+                        <option value="hatchback">Hatchback</option>
+                    </select>
+                </div>
+                <button id="apply-filters" class="btn">Aplicar Filtros</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vehicles Grid -->
+    <section class="vehicles-section">
+        <div class="container">
+            <div class="vehicles-grid" id="vehicles-grid">
+                <!-- Vehicle 1 -->
+                <div class="vehicle-card" data-brand="renault" data-year="older" data-type="sedan">
+                    <div class="vehicle-image">
+                        <img src="renakwid/principal.jpg" alt="Renault Kwid 2022" class="main-image">
+                        <div class="image-overlay">
+                            <span><i class="fas fa-images"></i> Ver Galería</span>
+                        </div>
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Renault Kwid 1.0 ZEN </h3>
+                        <div class="vehicle-details">
+                            <span><i class="fas fa-calendar-alt"></i> 2019</span>
+                            <span><i class="fas fa-car"></i> Sedan</span>
+                            <span><i class="fas fa-gas-pump"></i> Nafta</span>
+                        </div>
+                        <p>Todos los repuestos del Renault Kwid 1.0 Zen</p>
+                        <a href="https://wa.me/1140608681" target="_blank" class="btn vehicle-btn">Contactar</a>
+                    </div>
+                    <!-- Hidden Gallery Images -->
+                    <div class="gallery-images">
+                        <img src="renakwid/motor.jpg" alt="Renault Kwid Frontal">
+                        <img src="renakwid/derecho.jpg" alt="Renault Kwid Lateral Derecho">
+                        <img src="renakwid/ladoizquierdo.jpg" alt="Renault Kwid Lateral Izquierdo">
+                        <img src="renakwid/volante.jpg" alt="Renault Kwid Interior">
+                        <img src="renakwid/trasero.jpg" alt="Renault Kwid Motor">
+                    </div>
+                </div>
+
+                <!-- Vehicle 2 -->
+                <div class="vehicle-card" data-brand="kia" data-year="2007" data-type="hatchback">
+                    <div class="vehicle-image">
+                        <img src="kiapicanto/frontal.jpg" alt="Chevrolet Cruze 2021" class="main-image">
+                        <div class="image-overlay">
+                            <span><i class="fas fa-images"></i> Ver Galería</span>
+                        </div>
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>KIA PICANTO EX 1.1 AUT</h3>
+                        <div class="vehicle-details">
+                            <span><i class="fas fa-calendar-alt"></i> 2007</span>
+                            <span><i class="fas fa-car"></i> Hatchback</span>
+                            <span><i class="fas fa-gas-pump"></i> Nafta</span>
+                        </div>
+                        <p>Sedán de línea moderna con excelente economía de combustible y confort.</p>
+                        <a href="https://wa.me/1140608681" target="_blank" class="btn vehicle-btn">Contactar</a>
+                    </div>
+                    <!-- Hidden Gallery Images -->
+                    <div class="gallery-images">
+                        <img src="kiapicanto/frontal.jpg" alt="Kia Picanto Frontal">
+                        <img src="kiapicanto/derecha.jpg" alt="Kia Picanto Lateral Derecho">
+                        <img src="kiapicanto/izquierda.jpg" alt="Kia Picanto Lateral Izquierdo">
+                        <img src="kiapicanto/interior.jpg" alt="Kia Picanto Interior">
+                        <img src="kiapicanto/trasera.jpg" alt="Kia Picanto Motor">
+                    </div>
+                </div>
+
+                <!-- Vehicle 3 -->
+                <div class="vehicle-card" data-brand="volkswagen" data-year="2023" data-type="suv">
+                    <div class="vehicle-image">
+                        <img src="https://via.placeholder.com/400x300?text=Volkswagen+Tiguan+2023" alt="Volkswagen Tiguan 2023" class="main-image">
+                        <div class="image-overlay">
+                            <span><i class="fas fa-images"></i> Ver Galería</span>
+                        </div>
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Volkswagen Tiguan</h3>
+                        <div class="vehicle-details">
+                            <span><i class="fas fa-calendar-alt"></i> 2023</span>
+                            <span><i class="fas fa-car"></i> SUV</span>
+                            <span><i class="fas fa-gas-pump"></i> Nafta</span>
+                        </div>
+                        <p>SUV versátil con tecnología de punta y excelente espacio interior.</p>
+                        <a href="https://wa.me/1140608681" target="_blank" class="btn vehicle-btn">Contactar</a>
+                    </div>
+                    <!-- Hidden Gallery Images -->
+                    <div class="gallery-images">
+                        <img src="https://via.placeholder.com/800x600?text=Volkswagen+Tiguan+Frontal" alt="Volkswagen Tiguan Frontal">
+                        <img src="https://via.placeholder.com/800x600?text=Volkswagen+Tiguan+Lateral" alt="Volkswagen Tiguan Lateral">
+                        <img src="https://via.placeholder.com/800x600?text=Volkswagen+Tiguan+Interior" alt="Volkswagen Tiguan Interior">
+                        <img src="https://via.placeholder.com/800x600?text=Volkswagen+Tiguan+Motor" alt="Volkswagen Tiguan Motor">
+                        <img src="https://via.placeholder.com/800x600?text=Volkswagen+Tiguan+Trasera" alt="Volkswagen Tiguan Trasera">
+                    </div>
+                </div>
+
+                <!-- Vehicle 4 -->
+                <div class="vehicle-card" data-brand="fiat" data-year="2020" data-type="hatchback">
+                    <div class="vehicle-image">
+                        <img src="https://via.placeholder.com/400x300?text=Fiat+Argo+2020" alt="Fiat Argo 2020" class="main-image">
+                        <div class="image-overlay">
+                            <span><i class="fas fa-images"></i> Ver Galería</span>
+                        </div>
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Fiat Argo</h3>
+                        <div class="vehicle-details">
+                            <span><i class="fas fa-calendar-alt"></i> 2020</span>
+                            <span><i class="fas fa-car"></i> Hatchback</span>
+                            <span><i class="fas fa-gas-pump"></i> Nafta</span>
+                        </div>
+                        <p>Hatchback compacto con diseño italiano y gran maniobrabilidad urbana.</p>
+                        <a href="https://wa.me/1140608681" target="_blank" class="btn vehicle-btn">Contactar</a>
+                    </div>
+                    <!-- Hidden Gallery Images -->
+                    <div class="gallery-images">
+                        <img src="https://via.placeholder.com/800x600?text=Fiat+Argo+Frontal" alt="Fiat Argo Frontal">
+                        <img src="https://via.placeholder.com/800x600?text=Fiat+Argo+Lateral" alt="Fiat Argo Lateral">
+                        <img src="https://via.placeholder.com/800x600?text=Fiat+Argo+Interior" alt="Fiat Argo Interior">
+                        <img src="https://via.placeholder.com/800x600?text=Fiat+Argo+Motor" alt="Fiat Argo Motor">
+                        <img src="https://via.placeholder.com/800x600?text=Fiat+Argo+Trasera" alt="Fiat Argo Trasera">
+                    </div>
+                </div>
+
+                <!-- Vehicle 5 -->
+                <div class="vehicle-card" data-brand="toyota" data-year="2022" data-type="suv">
+                    <div class="vehicle-image">
+                        <img src="https://via.placeholder.com/400x300?text=Toyota+RAV4+2022" alt="Toyota RAV4 2022" class="main-image">
+                        <div class="image-overlay">
+                            <span><i class="fas fa-images"></i> Ver Galería</span>
+                        </div>
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Toyota RAV4</h3>
+                        <div class="vehicle-details">
+                            <span><i class="fas fa-calendar-alt"></i> 2022</span>
+                            <span><i class="fas fa-car"></i> SUV</span>
+                            <span><i class="fas fa-gas-pump"></i> Híbrido</span>
+                        </div>
+                        <p>SUV híbrido con excelente eficiencia de combustible y confiabilidad legendaria.</p>
+                        <a href="https://wa.me/1140608681" target="_blank" class="btn vehicle-btn">Contactar</a>
+                    </div>
+                    <!-- Hidden Gallery Images -->
+                    <div class="gallery-images">
+                        <img src="https://via.placeholder.com/800x600?text=Toyota+RAV4+Frontal" alt="Toyota RAV4 Frontal">
+                        <img src="https://via.placeholder.com/800x600?text=Toyota+RAV4+Lateral" alt="Toyota RAV4 Lateral">
+                        <img src="https://via.placeholder.com/800x600?text=Toyota+RAV4+Interior" alt="Toyota RAV4 Interior">
+                        <img src="https://via.placeholder.com/800x600?text=Toyota+RAV4+Motor" alt="Toyota RAV4 Motor">
+                        <img src="https://via.placeholder.com/800x600?text=Toyota+RAV4+Trasera" alt="Toyota RAV4 Trasera">
+                    </div>
+                </div>
+
+                <!-- Vehicle 6 -->
+                <div class="vehicle-card" data-brand="ford" data-year="2021" data-type="sedan">
+                    <div class="vehicle-image">
+                        <img src="https://via.placeholder.com/400x300?text=Ford+Focus+2021" alt="Ford Focus 2021" class="main-image">
+                        <div class="image-overlay">
+                            <span><i class="fas fa-images"></i> Ver Galería</span>
+                        </div>
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Ford Focus</h3>
+                        <div class="vehicle-details">
+                            <span><i class="fas fa-calendar-alt"></i> 2021</span>
+                            <span><i class="fas fa-car"></i> Sedán</span>
+                            <span><i class="fas fa-gas-pump"></i> Nafta</span>
+                        </div>
+                        <p>Sedán deportivo con excelente manejo y tecnología de conectividad avanzada.</p>
+                        <a href="https://wa.me/1140608681" target="_blank" class="btn vehicle-btn">Contactar</a>
+                    </div>
+                    <!-- Hidden Gallery Images -->
+                    <div class="gallery-images">
+                        <img src="https://via.placeholder.com/800x600?text=Ford+Focus+Frontal" alt="Ford Focus Frontal">
+                        <img src="https://via.placeholder.com/800x600?text=Ford+Focus+Lateral" alt="Ford Focus Lateral">
+                        <img src="https://via.placeholder.com/800x600?text=Ford+Focus+Interior" alt="Ford Focus Interior">
+                        <img src="https://via.placeholder.com/800x600?text=Ford+Focus+Motor" alt="Ford Focus Motor">
+                        <img src="https://via.placeholder.com/800x600?text=Ford+Focus+Trasera" alt="Ford Focus Trasera">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Modal -->
+    <div class="gallery-modal" id="gallery-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-vehicle-info">
+                <h2 id="modal-vehicle-title">Nombre del Vehículo</h2>
+                <p id="modal-vehicle-details">Detalles del vehículo</p>
+            </div>
+            <div class="gallery-container">
+                <div class="main-gallery-image">
+                    <img id="current-gallery-image" src="/placeholder.svg" alt="Imagen de galería">
+                </div>
+                <div class="gallery-controls">
+                    <button id="prev-image" class="gallery-control-btn"><i class="fas fa-chevron-left"></i></button>
+                    <div class="gallery-thumbnails" id="gallery-thumbnails">
+                        <!-- Thumbnails will be added dynamically -->
+                    </div>
+                    <button id="next-image" class="gallery-control-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>AlfaMundo <span>Autopartes</span></h2>
+                    <p>Tu solución en repuestos automotrices</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="index.html#productos">Productos</a></li>
+                        <li><a href="index.html#servicios">Servicios</a></li>
+                        <li><a href="vehiculos.html">Vehículos</a></li>
+                        <li><a href="index.html#nosotros">Nosotros</a></li>
+                        <li><a href="index.html#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Suscríbete a Nuestro Boletín</h3>
+                    <p>Recibe ofertas exclusivas y novedades</p>
+                    <form id="newsletterForm">
+                        <input type="email" placeholder="Tu email" required>
+                        <button type="submit" class="btn">Suscribirse</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AlfaMundo Autopartes. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
