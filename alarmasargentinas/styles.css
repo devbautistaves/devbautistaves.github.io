@@ -312,7 +312,6 @@ ul {
 .devices-img {
     max-width: 100%;
     border-radius: 8px;
-    box-shadow: var(--shadow);
 }
 
 .promo-badge {
@@ -479,7 +478,6 @@ ul {
 .app-img {
     max-width: 300px;
     border-radius: 20px;
-    box-shadow: var(--shadow);
 }
 
 /* Productos */
