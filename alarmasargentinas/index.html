@@ -348,71 +348,7 @@
             announcementBar.style.display = 'none';
         });
 
-        // Validación de formulario
-        const contactForm = document.getElementById('contactForm');
-        
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            let isValid = true;
-            
-            // Validar nombre
-            const nombre = document.getElementById('nombre');
-            const nombreError = document.getElementById('nombre-error');
-            if (nombre.value.trim() === '') {
-                nombreError.textContent = 'Por favor, ingresa tu nombre y apellido';
-                isValid = false;
-            } else {
-                nombreError.textContent = '';
-            }
-            
-            // Validar teléfono
-            const telefono = document.getElementById('telefono');
-            const telefonoError = document.getElementById('telefono-error');
-            const telefonoRegex = /^[0-9]{10,15}$/;
-            if (!telefonoRegex.test(telefono.value.replace(/\D/g, ''))) {
-                telefonoError.textContent = 'Por favor, ingresa un número de teléfono válido';
-                isValid = false;
-            } else {
-                telefonoError.textContent = '';
-            }
-            
-            // Validar email
-            const email = document.getElementById('email');
-            const emailError = document.getElementById('email-error');
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailRegex.test(email.value)) {
-                emailError.textContent = 'Por favor, ingresa un email válido';
-                isValid = false;
-            } else {
-                emailError.textContent = '';
-            }
-            
-            // Validar tipo de propiedad
-            const tipo = document.getElementById('tipo');
-            const tipoError = document.getElementById('tipo-error');
-            if (tipo.value === '') {
-                tipoError.textContent = 'Por favor, selecciona un tipo de propiedad';
-                isValid = false;
-            } else {
-                tipoError.textContent = '';
-            }
-            
-            // Validar términos
-            const terminos = document.getElementById('terminos');
-            const terminosError = document.getElementById('terminos-error');
-            if (!terminos.checked) {
-                terminosError.textContent = 'Debes aceptar los términos y condiciones';
-                isValid = false;
-            } else {
-                terminosError.textContent = '';
-            }
-            
-            if (isValid) {
-                // Aquí iría el código para enviar el formulario
-                alert('¡Formulario enviado con éxito! Pronto nos pondremos en contacto contigo.');
-                contactForm.reset();
-            }
-        });
+ 
 
         // Slider de productos
         const productCards = document.querySelectorAll('.product-card');
