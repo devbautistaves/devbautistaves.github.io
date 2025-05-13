@@ -792,7 +792,7 @@ img {
         text-align: center;
     }
     .plan-image {
-    height: 42 vw;
+    height: 42vw;
     overflow: hidden;
     display: flex;
     align-items: center;
