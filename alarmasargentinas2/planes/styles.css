@@ -337,17 +337,14 @@ img {
 
 .component-image {
     flex: 0 0 40%;
-    background-color: #F8F8F8;
+    background-color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
 }
 
 .component-image img {
-    max-width: 100%;
-    max-height: 150px;
-    object-fit: contain;
+    object-fit: fill;
 }
 
 .component-info {
