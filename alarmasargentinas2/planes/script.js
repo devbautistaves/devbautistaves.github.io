@@ -45,7 +45,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 return 'plan seleccionado';
         }
     }
-    
+           // Menú móvil
+        const menuToggle = document.querySelector('.menu-toggle');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
     // Botones de cotización
     const quoteButtons = document.querySelectorAll('.btn-quote');
     
