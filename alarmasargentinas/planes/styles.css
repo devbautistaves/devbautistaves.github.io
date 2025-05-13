@@ -215,6 +215,8 @@ img {
 
 .mobile-menu.active {
     display: block;
+        position: fixed;
+
 }
 
 .page-header {
