@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Solicitud | Alarmas Argentinas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Banner superior -->
+    <div class="top-banner">
+        <p>50% OFF POR 6 MESES</p>
+        <button class="close-btn">&times;</button>
+    </div>
+
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.svg" alt="Alarmas Argentinas" class="logo-img">
+                    <span class="logo-text">ALARMAS ARGENTINAS</span>
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="productos.html">Productos</a>
+                <a href="contrataciones.html" class="active">Contrataciones</a>
+            </div>
+            <div class="cta-button">
+                <a href="#contacto" class="btn-primary"><i class="fas fa-phone-alt"></i> Cotizá ahora</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Encabezado del formulario -->
+    <header class="form-header">
+        <div class="container">
+            <h1>Solicitud de Servicio</h1>
+            <p>Complete el siguiente formulario para solicitar la instalación de su sistema de alarma</p>
+        </div>
+    </header>
+
+    <!-- Contenedor principal del formulario -->
+    <main class="form-container">
+        <div class="container">
+            <!-- Indicador de progreso -->
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress" id="progress"></div>
+                    <div class="progress-step active" data-step="1">
+                        <i class="fas fa-user"></i>
+                        <span class="step-text">Datos Personales</span>
+                    </div>
+                    <div class="progress-step" data-step="2">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span class="step-text">Dirección</span>
+                    </div>
+                    <div class="progress-step" data-step="3">
+                        <i class="fas fa-home"></i>
+                        <span class="step-text">Condiciones</span>
+                    </div>
+                    <div class="progress-step" data-step="4">
+                        <i class="fas fa-phone-alt"></i>
+                        <span class="step-text">Contacto</span>
+                    </div>
+                    <div class="progress-step" data-step="5">
+                        <i class="fas fa-check-circle"></i>
+                        <span class="step-text">Confirmación</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Formulario multi-step -->
+            <form id="multistepForm" class="multistep-form">
+                <!-- Paso 1: Datos del titular -->
+                <div class="form-step active" id="step1">
+                    <div class="step-content">
+                        <div class="step-info">
+                            <h2>Datos del titular</h2>
+                            <p>Ingrese los datos de la persona titular del servicio</p>
+                            
+                            <div class="form-group">
+                                <label for="nombre">Nombre Completo</label>
+                                <input type="text" id="nombre" name="nombre" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="dni">DNI</label>
+                                <input type="text" id="dni" name="dni" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="telefono">Teléfono</label>
+                                <input type="tel" id="telefono" name="telefono" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="step-image">
+                            <img src="familia.jpg" alt="Familia protegida con alarma">
+                        </div>
+                    </div>
+                    <div class="form-buttons">
+                        <button type="button" class="btn-next">Siguiente</button>
+                    </div>
+                </div>
+
+                <!-- Paso 2: Dirección a instalar el servicio -->
+                <div class="form-step" id="step2">
+                    <div class="step-content">
+                        <div class="step-info">
+                            <h2>Dirección a instalar el servicio</h2>
+                            <p>Ingrese la dirección donde se instalará el sistema de alarma</p>
+                            
+                            <div class="form-group">
+                                <label for="calle">Calle</label>
+                                <input type="text" id="calle" name="calle" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="numero">Número</label>
+                                <input type="text" id="numero" name="numero" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="entrecalles">Entre calles</label>
+                                <input type="text" id="entrecalles" name="entrecalles">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="localidad">Localidad</label>
+                                <input type="text" id="localidad" name="localidad" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="provincia">Provincia</label>
+                                <select id="provincia" name="provincia" required>
+                                    <option value="">Seleccione una provincia</option>
+                                    <option value="Buenos Aires">Buenos Aires</option>
+                                    <option value="CABA">Ciudad Autónoma de Buenos Aires</option>
+                                    <option value="Catamarca">Catamarca</option>
+                                    <option value="Chaco">Chaco</option>
+                                    <option value="Chubut">Chubut</option>
+                                    <option value="Córdoba">Córdoba</option>
+                                    <option value="Corrientes">Corrientes</option>
+                                    <option value="Entre Ríos">Entre Ríos</option>
+                                    <option value="Formosa">Formosa</option>
+                                    <option value="Jujuy">Jujuy</option>
+                                    <option value="La Pampa">La Pampa</option>
+                                    <option value="La Rioja">La Rioja</option>
+                                    <option value="Mendoza">Mendoza</option>
+                                    <option value="Misiones">Misiones</option>
+                                    <option value="Neuquén">Neuquén</option>
+                                    <option value="Río Negro">Río Negro</option>
+                                    <option value="Salta">Salta</option>
+                                    <option value="San Juan">San Juan</option>
+                                    <option value="San Luis">San Luis</option>
+                                    <option value="Santa Cruz">Santa Cruz</option>
+                                    <option value="Santa Fe">Santa Fe</option>
+                                    <option value="Santiago del Estero">Santiago del Estero</option>
+                                    <option value="Tierra del Fuego">Tierra del Fuego</option>
+                                    <option value="Tucumán">Tucumán</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="step-image">
+                            <img src="obelisco.jpg" alt="Mapa de ubicación">
+                        </div>
+                    </div>
+                    <div class="form-buttons">
+                        <button type="button" class="btn-prev">Anterior</button>
+                        <button type="button" class="btn-next">Siguiente</button>
+                    </div>
+                </div>
+
+                <!-- Paso 3: Condiciones del Domicilio -->
+                <div class="form-step" id="step3">
+                    <div class="step-content">
+                        <div class="step-info">
+                            <h2>Condiciones del Domicilio</h2>
+                            <p>Información sobre las condiciones de su domicilio para la instalación</p>
+                            
+                            <div class="form-group">
+                                <label>Tipo de techo</label>
+                                <div class="radio-group">
+                                    <label class="radio-label">
+                                        <input type="radio" name="tipoTecho" value="Losa" required>
+                                        <span>Losa</span>
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="tipoTecho" value="Chapa">
+                                        <span>Chapa</span>
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="tipoTecho" value="Madera con aislante">
+                                        <span>Madera con aislante</span>
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="tipoTecho" value="Otro">
+                                        <span>Otro</span>
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Tipo de Internet</label>
+                                <div class="radio-group">
+                                    <label class="radio-label">
+                                        <input type="radio" name="tipoInternet" value="Fibra óptica" required>
+                                        <span>Fibra óptica</span>
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="tipoInternet" value="ADSL">
+                                        <span>ADSL</span>
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="tipoInternet" value="Satelital">
+                                        <span>Satelital</span>
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="tipoInternet" value="Compartido con Internet">
+                                        <span>Compartido con Internet</span>
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="tipoInternet" value="No tengo">
+                                        <span>No tengo</span>
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Refacciones</label>
+                                <div class="radio-group">
+                                    <label class="radio-label">
+                                        <input type="radio" name="refacciones" value="No estoy haciendo" required>
+                                        <span>No estoy haciendo</span>
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="refacciones" value="Estoy haciendo">
+                                        <span>Estoy haciendo</span>
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="refacciones" value="Tengo planeado">
+                                        <span>Tengo planeado</span>
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Las puertas y ventanas están en condiciones?</label>
+                                <div class="radio-group">
+                                    <label class="radio-label">
+                                        <input type="radio" name="condicionesPuertasVentanas" value="Sí" required>
+                                        <span>Sí</span>
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="condicionesPuertasVentanas" value="No">
+                                        <span>No</span>
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="condicionesPuertasVentanas" value="Algunas">
+                                        <span>Algunas</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step-image">
+                            <img src="hogar.jpg" alt="Casa con sistema de alarma">
+                        </div>
+                    </div>
+                    <div class="form-buttons">
+                        <button type="button" class="btn-prev">Anterior</button>
+                        <button type="button" class="btn-next">Siguiente</button>
+                    </div>
+                </div>
+
+                <!-- Paso 4: Contacto de Emergencia -->
+                <div class="form-step" id="step4">
+                    <div class="step-content">
+                        <div class="step-info">
+                            <h2>Contacto de Emergencia</h2>
+                            <p>Ingrese los datos de la persona a contactar en caso de emergencia</p>
+                            
+                            <div class="form-group">
+                                <label for="nombreEmergencia">Nombre</label>
+                                <input type="text" id="nombreEmergencia" name="nombreEmergencia" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="telefonoEmergencia">Teléfono</label>
+                                <input type="tel" id="telefonoEmergencia" name="telefonoEmergencia" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="relacionEmergencia">Relación</label>
+                                <select id="relacionEmergencia" name="relacionEmergencia" required>
+                                    <option value="">Seleccione una opción</option>
+                                    <option value="Familiar">Familiar</option>
+                                    <option value="Amigo">Amigo</option>
+                                    <option value="Vecino">Vecino</option>
+                                    <option value="Compañero de trabajo">Compañero de trabajo</option>
+                                    <option value="Otro">Otro</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="step-image">
+                            <div class="emergency-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-buttons">
+                        <button type="button" class="btn-prev">Anterior</button>
+                        <button type="button" class="btn-next">Siguiente</button>
+                    </div>
+                </div>
+
+                <!-- Paso 5: Confirmación -->
+                <div class="form-step" id="step5">
+                    <div class="step-content confirmation-step">
+                        <div class="confirmation-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h2>Validación de identidad</h2>
+                        <p>Hemos terminado con el proceso de solicitud de datos. Por favor, toque el boton de enviar solicitud para terminar.</p>
+                        
+                               <div class="confirmation-message">
+                            <p>Gracias por completar la gestión en línea. Con la información proporcionada procederemos a ingresar los datos para generar la orden de instalación correspondiente.</p>
+                            <p>En caso de que alguno de los datos aportados requiera aclaración, un asesor se comunicará con usted para brindar una solución y continuar con el proceso sin demoras.</p>
+                            <p class="text-center">¡Gracias por confiar en nosotros!</p>
+                        </div>
+                    </div>
+                    <div class="form-buttons">
+                        <button type="button" class="btn-prev">Anterior</button>
+                        <button type="submit" class="btn-submit">Enviar solicitud</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src=" " alt="Alarmas Argentinas">
+                    <p>Protección inteligente para tu hogar y negocio con la última tecnología en seguridad</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Enlaces rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="contrataciones.html">Contrataciones</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-phone"></i> 0800-123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@alarmasargentinas.com.ar</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Buenos Aires, Argentina</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Síguenos</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Alarmas Argentinas. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
