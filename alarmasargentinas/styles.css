@@ -747,7 +747,7 @@ ul {
       text-align: center;
     }
 
-    h1 {
+    .container-planes h1 {
       color: #1d1c1c;
       margin-bottom: 40px;
       background-color: rgb(252, 121, 14);
