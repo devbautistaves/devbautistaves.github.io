@@ -56,34 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Botones de cotización
     const quoteButtons = document.querySelectorAll('.btn-quote');
     
-    quoteButtons.forEach(button => {
-        button.addEventListener('click', function(e) {
-            e.preventDefault();
-            
-            // Obtener el plan desde el título del card
-            const planCard = this.closest('.plan-card');
-            const planTitle = planCard.querySelector('h3').textContent;
-            
-            // Seleccionar el plan en el formulario
-            const planSelect = document.getElementById('plan');
-            
-            if (planSelect) {
-                if (planTitle.includes('View')) {
-                    planSelect.value = 'view';
-                } else if (planTitle.includes('Climax')) {
-                    planSelect.value = 'climax';
-                } else {
-                    planSelect.value = 'custom';
-                }
-            }
-            
-            // Scroll al formulario
-            const contactSection = document.getElementById('contacto');
-            if (contactSection) {
-                contactSection.scrollIntoView({ behavior: 'smooth' });
-            }
-        });
-    });
+
     
     // Animación de scroll suave para todos los enlaces internos
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
