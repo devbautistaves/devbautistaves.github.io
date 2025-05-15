@@ -88,7 +88,15 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             </div>
 
             <!-- Formulario multi-step -->
-            <form id="multistepForm" class="multistep-form">
+            <form action="https://formsubmit.co/devbautistaves@gmail.com" method="POST" id="multistepForm" class="multistep-form" enctype="multipart/form-data">
+                <input type="hidden" name="_template" value="box">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="Nuevo interesado en alarmas.">
+                <input type="hidden" name="_next" value="https://bautistaves.com.ar/alarmasargentinas">
+
+
+
+
                 <!-- Paso 1: Datos del titular -->
                 <div class="form-step active" id="step1">
                     <div class="step-content">
@@ -342,8 +350,9 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                             <i class="fas fa-check-circle"></i>
                         </div>
                         <h2>Validación de identidad</h2>
-                        <p>Hemos terminado con el proceso de solicitud de datos. Por favor, toque el boton de enviar solicitud para terminar.</p>
-                        
+                        <p>Porfavor suba una foto frontal de su dni para terminar con la gestión en linea.</p>
+                                <input type="file" name="dnifrontal" accept="image/png, image/jpeg">
+
                                <div class="confirmation-message">
                             <p>Gracias por completar la gestión en línea. Con la información proporcionada procederemos a ingresar los datos para generar la orden de instalación correspondiente.</p>
                             <p>En caso de que alguno de los datos aportados requiera aclaración, un asesor se comunicará con usted para brindar una solución y continuar con el proceso sin demoras.</p>

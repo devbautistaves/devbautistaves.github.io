@@ -48,29 +48,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Envío del formulario
-    if (form) {
-        form.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Validar el código de verificación
-            const verificationCode = Array.from(codeInputs).map(input => input.value).join('');
-            if (verificationCode.length !== 6) {
-                alert('Por favor, ingrese el código de verificación completo.');
-                return;
-            }
-            
-            // Aquí normalmente enviarías los datos a un servidor
-            // Por ahora, solo mostraremos un mensaje de éxito
-            alert('¡Formulario enviado con éxito! Nos pondremos en contacto contigo a la brevedad.');
-            
-            // Resetear formulario y volver al primer paso
-            form.reset();
-            currentStep = 0;
-            updateFormSteps();
-            updateProgressBar();
-        });
-    }
-    
     // Manejo de los inputs del código de verificación
     codeInputs.forEach((input, index) => {
         input.addEventListener('keyup', (e) => {

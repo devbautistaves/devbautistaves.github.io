@@ -646,7 +646,9 @@ img {
     .form-buttons {
         padding: 15px;
     }
-    
+    .step-image {
+        display: none;
+    }
     .btn-prev,
     .btn-next,
     .btn-submit {
